@@ -16,7 +16,6 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // supportedLocales: [Locale('de', ''), Locale('en', '')],
       title: AppStrings.title,
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
