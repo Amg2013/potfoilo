@@ -69,6 +69,7 @@ class Home extends StatelessWidget {
           ),
         ),
       ),
+      // body
       body: Container(
         child: SingleChildScrollView(
           child: Column(
