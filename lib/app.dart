@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
       themeMode: ThemeMode.dark,
       darkTheme: Theme.of(context).copyWith(
         platform: TargetPlatform.android,
-        scaffoldBackgroundColor: kBackgroundColor,
+        scaffoldBackgroundColor: Color.fromARGB(0, 58, 70, 201),
         primaryColor: kPrimaryColor,
         canvasColor: kBackgroundColor,
         textTheme: GoogleFonts.latoTextTheme(),
