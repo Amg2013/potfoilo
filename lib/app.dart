@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       // supportedLocales: [Locale('de', ''), Locale('en', '')],
-      title: AppStrings.title,
+      //title: AppStrings.title,
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       darkTheme: Theme.of(context).copyWith(

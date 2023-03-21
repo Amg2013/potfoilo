@@ -40,7 +40,7 @@ class HeaderLogo extends StatelessWidget {
             text: TextSpan(
               children: [
                 TextSpan(
-                  text: "M",
+                  text: "AMG",
                   style: GoogleFonts.oswald(
                     color: Colors.white,
                     fontSize: 32.0,
