@@ -14,13 +14,16 @@ List<HeaderItem> headerItems = [
     title: "HOME".tr().toString(),
     onTap: () {},
   ),
-  HeaderItem(title: AppStrings.headerPREVIOUS.tr().toString(), onTap: () {}),
-  HeaderItem(title: AppStrings.headerService.tr().toString(), onTap: () {}),
-  HeaderItem(title: AppStrings.headerGitHub.tr().toString(), onTap: () {}),
   HeaderItem(
-      title: AppStrings.headerRecommendations.tr().toString(), onTap: () {}),
-  HeaderItem(title: AppStrings.headerSocial.tr().toString(), onTap: () {}),
-  HeaderItem(title: AppStrings.headerHire.tr().toString(), onTap: () {}),
+      title: localizationKey.headerPREVIOUS.tr().toString(), onTap: () {}),
+  HeaderItem(
+      title: localizationKey.headerService.tr().toString(), onTap: () {}),
+  HeaderItem(title: localizationKey.headerGitHub.tr().toString(), onTap: () {}),
+  HeaderItem(
+      title: localizationKey.headerRecommendations.tr().toString(),
+      onTap: () {}),
+  HeaderItem(title: localizationKey.headerSocial.tr().toString(), onTap: () {}),
+  HeaderItem(title: localizationKey.headerHire.tr().toString(), onTap: () {}),
   // HeaderItem(title: 'En', onTap: () {})
 ];
 
@@ -39,7 +42,7 @@ class HeaderLogo extends StatelessWidget {
             text: TextSpan(
               children: [
                 TextSpan(
-                  text: "M",
+                  text: localizationKey.bigIconLetter,
                   style: GoogleFonts.oswald(
                     color: Colors.white,
                     fontSize: 32.0,
