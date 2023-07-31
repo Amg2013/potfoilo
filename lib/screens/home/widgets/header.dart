@@ -1,6 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -152,10 +151,10 @@ class Header extends StatelessWidget {
             GestureDetector(
               onTap: () {
                 // Lets open drawer using global key
-                Globals.scaffoldKey.currentState.openEndDrawer();
+                Globals.scaffoldKey.currentState!.openEndDrawer();
               },
               child: Icon(
-                FlutterIcons.menu_fea,
+                Icons.menu,
                 color: Colors.white,
                 size: 28.0,
               ),

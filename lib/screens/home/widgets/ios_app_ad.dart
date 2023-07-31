@@ -47,7 +47,7 @@ class IosAppAd extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "IOS APP",
+                          "Mobile APP",
                           style: GoogleFonts.oswald(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w900,
@@ -66,9 +66,7 @@ class IosAppAd extends StatelessWidget {
                             fontSize: 35.0,
                           ),
                         ),
-                        SizedBox(
-                          height: 10.0,
-                        ),
+                        SizedBox(height: 10.0),
                         Text(
                           "This is a random text about the project,  This is a random text about the projectThis is a random text about the project,This should be long enough",
                           style: TextStyle(
@@ -77,9 +75,8 @@ class IosAppAd extends StatelessWidget {
                             fontSize: 15.0,
                           ),
                         ),
-                        SizedBox(
-                          height: 25.0,
-                        ),
+                        SizedBox(height: 25.0),
+                        // this row or to buttons of actions
                         Row(
                           children: [
                             MouseRegion(
@@ -90,11 +87,11 @@ class IosAppAd extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 height: 48.0,
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 28.0,
-                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 28.0),
                                 child: TextButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    // amgad
+                                  },
                                   child: Center(
                                     child: Text(
                                       "EXPLORE MORE",
@@ -108,9 +105,7 @@ class IosAppAd extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(
-                              width: 10.0,
-                            ),
+                            SizedBox(width: 10.0),
                             MouseRegion(
                               cursor: SystemMouseCursors.click,
                               child: Container(
@@ -123,7 +118,9 @@ class IosAppAd extends StatelessWidget {
                                 height: 48.0,
                                 padding: EdgeInsets.symmetric(horizontal: 28.0),
                                 child: TextButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    // amgad
+                                  },
                                   child: Center(
                                     child: Text(
                                       "NEXT APP",

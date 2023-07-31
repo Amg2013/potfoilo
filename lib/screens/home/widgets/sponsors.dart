@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_framework/responsive_framework.dart';
+import 'package:responsive_framework/responsive_wrapper.dart';
+
 import '../../../utils/constants.dart';
 import '../../../utils/screen_helper.dart';
 
