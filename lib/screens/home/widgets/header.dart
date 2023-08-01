@@ -1,6 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -15,13 +14,16 @@ List<HeaderItem> headerItems = [
     title: "HOME".tr().toString(),
     onTap: () {},
   ),
-  HeaderItem(title: AppStrings.headerPREVIOUS.tr().toString(), onTap: () {}),
-  HeaderItem(title: AppStrings.headerService.tr().toString(), onTap: () {}),
-  HeaderItem(title: AppStrings.headerGitHub.tr().toString(), onTap: () {}),
   HeaderItem(
-      title: AppStrings.headerRecommendations.tr().toString(), onTap: () {}),
-  HeaderItem(title: AppStrings.headerSocial.tr().toString(), onTap: () {}),
-  HeaderItem(title: AppStrings.headerHire.tr().toString(), onTap: () {}),
+      title: localizationKey.headerPREVIOUS.tr().toString(), onTap: () {}),
+  HeaderItem(
+      title: localizationKey.headerService.tr().toString(), onTap: () {}),
+  HeaderItem(title: localizationKey.headerGitHub.tr().toString(), onTap: () {}),
+  HeaderItem(
+      title: localizationKey.headerRecommendations.tr().toString(),
+      onTap: () {}),
+  HeaderItem(title: localizationKey.headerSocial.tr().toString(), onTap: () {}),
+  HeaderItem(title: localizationKey.headerHire.tr().toString(), onTap: () {}),
   // HeaderItem(title: 'En', onTap: () {})
 ];
 
@@ -40,7 +42,7 @@ class HeaderLogo extends StatelessWidget {
             text: TextSpan(
               children: [
                 TextSpan(
-                  text: "AMG",
+                  text: localizationKey.bigIconLetter,
                   style: GoogleFonts.oswald(
                     color: Colors.white,
                     fontSize: 32.0,
@@ -152,10 +154,10 @@ class Header extends StatelessWidget {
             GestureDetector(
               onTap: () {
                 // Lets open drawer using global key
-                Globals.scaffoldKey.currentState.openEndDrawer();
+                Globals.scaffoldKey.currentState!.openEndDrawer();
               },
               child: Icon(
-                FlutterIcons.menu_fea,
+                Icons.menu,
                 color: Colors.white,
                 size: 28.0,
               ),

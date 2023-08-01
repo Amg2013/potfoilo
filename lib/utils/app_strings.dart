@@ -1,4 +1,4 @@
-class AppStrings {
+class localizationKey {
   static String title = 'Amgad Portfolio';
   static String designHedar = 'DESIGN';
   static String designSubtiltle = "Get interactive ui that engage your clints ";
@@ -14,4 +14,6 @@ class AppStrings {
   static String headerRecommendations = 'Recommendations';
   static String headerSocial = 'Social media';
   static String headerHire = 'Hire Me';
+
+  static String bigIconLetter = 'AMG';
 }
