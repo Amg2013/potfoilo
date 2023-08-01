@@ -16,4 +16,5 @@ class localizationKey {
   static String headerHire = 'Hire Me';
 
   static String bigIconLetter = 'AMG';
+  static String clients = 'Clients';
 }
