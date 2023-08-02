@@ -2,16 +2,17 @@ import 'package:Amgad/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-
 import '../../../models/stat.dart';
 import '../../../utils/constants.dart';
 import '../../../utils/screen_helper.dart';
 
 final List<Stat> stats = [
-  Stat(count: "4", text: localizationKey.clients),
-  Stat(count: "20+", text: "Projects"),
-  Stat(count: "30+", text: "Awards"),
-  Stat(count: "2", text: "Years\nExperience"),
+  Stat(count: "20", text: LocalizationKey.clients),
+  Stat(count: "50+", text: LocalizationKey.projects),
+  Stat(count: "30+", text: LocalizationKey.awards),
+  Stat(
+      count: "4",
+      text: '${LocalizationKey.years}${LocalizationKey.experience}'),
 ];
 
 class PortfolioStats extends StatelessWidget {

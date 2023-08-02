@@ -1,36 +1,11 @@
+import 'package:Amgad/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import '../../../models/education.dart';
-import '../../../utils/constants.dart';
-import '../../../utils/screen_helper.dart';
 
-final List<Education> educationList = [
-  Education(
-    description:
-        "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2019 - PRESENT",
-  ),
-  Education(
-    description:
-        "This is a sample education and details about it is stated below.This is a sample education and details about it is stated below",
-    linkName: "www.amg_13.com",
-    period: "2018 - 2019",
-  ),
-  Education(
-    description:
-        "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "www.fasdf.com",
-    period: "2022 - 20",
-  ),
-  Education(
-    description:
-        "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "www.sdlfgj.com",
-    period: "2022 - 20",
-  ),
-];
+import '../../../../utils/constants.dart';
+import '../../../../utils/screen_helper.dart';
+import 'education_data.dart';
 
 class EducationSection extends StatelessWidget {
   @override
@@ -55,7 +30,7 @@ class EducationSection extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              "EDUCATION",
+              LocalizationKey.educationAndExperience,
               style: GoogleFonts.oswald(
                 color: Colors.white,
                 fontWeight: FontWeight.w900,
@@ -63,26 +38,19 @@ class EducationSection extends StatelessWidget {
                 height: 1.3,
               ),
             ),
-            SizedBox(
-              height: 5.0,
-            ),
+            SizedBox(height: 5.0),
             Wrap(
               children: [
                 Container(
                   constraints: BoxConstraints(maxWidth: 400.0),
                   child: Text(
-                    "A flutter developer that does all the job he needs to do at all times",
-                    style: TextStyle(
-                      color: Colors.white,
-                      height: 1.5,
-                    ),
+                    "",
+                    style: TextStyle(color: Colors.white, height: 1.5),
                   ),
                 ),
               ],
             ),
-            SizedBox(
-              height: 40.0,
-            ),
+            SizedBox(height: 40.0),
             LayoutBuilder(
               builder: (context, constraints) {
                 return Container(
@@ -97,16 +65,14 @@ class EducationSection extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  education.period,
+                                  education.title,
                                   style: GoogleFonts.oswald(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w700,
                                     fontSize: 20.0,
                                   ),
                                 ),
-                                SizedBox(
-                                  height: 5.0,
-                                ),
+                                SizedBox(height: 5.0),
                                 Text(
                                   education.description,
                                   maxLines: 4,
@@ -116,9 +82,7 @@ class EducationSection extends StatelessWidget {
                                     height: 1.5,
                                   ),
                                 ),
-                                SizedBox(
-                                  height: 20.0,
-                                ),
+                                SizedBox(height: 10.0),
                                 MouseRegion(
                                   cursor: SystemMouseCursors.click,
                                   child: GestureDetector(
@@ -126,14 +90,19 @@ class EducationSection extends StatelessWidget {
                                     child: Text(
                                       education.linkName,
                                       style: TextStyle(
-                                        color: Colors.white,
+                                        color: kPrimaryColor,
                                       ),
                                     ),
                                   ),
                                 ),
-                                SizedBox(
-                                  height: 40.0,
-                                )
+                                SizedBox(height: 10.0),
+                                Text(
+                                  education.period,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 50.0)
                               ],
                             ),
                           ),

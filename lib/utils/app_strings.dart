@@ -1,12 +1,13 @@
-class localizationKey {
+class LocalizationKey {
   static String title = 'Amgad Portfolio';
   static String designHedar = 'DESIGN';
-  static String designSubtiltle = "Get interactive ui that engage your clints ";
-  static String devolpHedar = 'DEVELOP';
-  static String devolpSub = " Develop any system you want";
-  static String writeHedar = 'WRITE';
+  static String designSubtitle = "Get interactive ui that engage your clients ";
+  static String developHeder = 'DEVELOP';
+  static String devolpSub =
+      " Develop any system you want to solve your problems";
+  static String writeHeder = 'WRITE';
   static String writeSub = " show your own story to everyone";
-  static String honestyHedar = 'honesty';
+  static String honestyHadar = 'honesty';
   static String honestySub = "All your ides in honesty place";
   static String headerPREVIOUS = 'PREVIOUS WORK';
   static String headerService = 'SERVICES';
@@ -17,4 +18,25 @@ class localizationKey {
 
   static String bigIconLetter = 'AMG';
   static String clients = 'Clients';
+  static String projects = 'Projects';
+  static String awards = 'Awards';
+  static String years = 'Years';
+  static String experience = 'Experience';
+
+  static String educationAndExperience = 'Education And Experience';
+
+  static String testimonials = 'TESTIMONIALS';
+
+  // static String experience = 'Experience';
+
+  // static String experience = 'Experience';
+  // static String experience = 'Experience';
+  // static String experience = 'Experience';
+  // static String experience = 'Experience';
+  // static String experience = 'Experience';
+  // static String experience = 'Experience';
+  // static String experience = 'Experience';
+  // static String experience = 'Experience';
+  // static String experience = 'Experience';
+  // static String experience = 'Experience';
 }

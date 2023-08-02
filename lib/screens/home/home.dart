@@ -1,17 +1,17 @@
+import 'package:Amgad/screens/home/widgets/testimonials/testimonial_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../../utils/constants.dart';
 import '../../utils/globals.dart';
 import 'widgets/carousel.dart';
 import 'widgets/cv_section.dart';
-import 'widgets/education_section.dart';
-import 'widgets/footer.dart';
+import 'widgets/education_and_exprence/education_section.dart';
+import 'widgets/connect_me_section/connect_me_info.dart';
 import 'widgets/header.dart';
 import 'widgets/ios_app_ad.dart';
 import 'widgets/portfolio_stats.dart';
 import 'widgets/skill_section.dart';
 import 'widgets/sponsors.dart';
-import 'widgets/testimonial_widget.dart';
 import 'widgets/website_ad.dart';
 
 class Home extends StatelessWidget {
@@ -25,9 +25,9 @@ class Home extends StatelessWidget {
     );
   }
 
-//////////////////////////////////////////////
-/////////Widget Methods /////////////////////
-////////////////////////////////////////////
+///////////////////////////////////////////////
+//////////Widget Methods /////////////////////
+/////////////////////////////////////////////
 
   Drawer sideDrawer(BuildContext context) {
     return Drawer(
@@ -86,7 +86,7 @@ class Home extends StatelessWidget {
     return Container(
       child: SingleChildScrollView(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
               child: Header(),
@@ -113,7 +113,7 @@ class Home extends StatelessWidget {
             Sponsors(),
             SizedBox(height: 50.0),
             TestimonialWidget(),
-            Footer(),
+            ConnectMeInfo(),
           ],
         ),
       ),

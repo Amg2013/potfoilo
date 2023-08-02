@@ -62,7 +62,7 @@ class WebsiteAd extends StatelessWidget {
                           height: 10.0,
                         ),
                         Text(
-                          "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
+                          "Embark on unforgettable journeys and explore a world of entertainment. Discover exciting destinations, book flights, hotels, and tickets, while indulging in captivating articles, reviews,\n and event updates for an immersive experience.",
                           style: TextStyle(
                             color: kCaptionColor,
                             height: 1.5,

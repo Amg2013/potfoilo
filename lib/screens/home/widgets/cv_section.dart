@@ -8,24 +8,24 @@ import '../../../utils/screen_helper.dart';
 
 final List<DesignProcess> designProcesses = [
   DesignProcess(
-    title: localizationKey.designHedar,
+    title: LocalizationKey.designHedar,
     imagePath: "assets/images/design.png",
-    subtitle: localizationKey.designSubtiltle,
+    subtitle: LocalizationKey.designSubtitle,
   ),
   DesignProcess(
-    title: localizationKey.devolpHedar,
+    title: LocalizationKey.developHeder,
     imagePath: "assets/images/develop.png",
-    subtitle: localizationKey.designSubtiltle,
+    subtitle: LocalizationKey.devolpSub,
   ),
   DesignProcess(
-    title: localizationKey.writeHedar,
+    title: LocalizationKey.writeHeder,
     imagePath: "assets/images/write.png",
-    subtitle: localizationKey.writeSub,
+    subtitle: LocalizationKey.writeSub,
   ),
   DesignProcess(
-    title: localizationKey.honestyHedar,
+    title: LocalizationKey.honestyHadar,
     imagePath: "assets/images/promote.png",
-    subtitle: localizationKey.honestySub,
+    subtitle: LocalizationKey.honestySub,
   ),
 ];
 

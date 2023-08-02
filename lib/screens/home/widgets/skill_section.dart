@@ -7,24 +7,32 @@ import '../../../utils/screen_helper.dart';
 
 List<Skill> skills = [
   Skill(
-    skill: "Dart ,kotlin",
-    percentage: 62,
-  ),
-  Skill(
-    skill: "flutter devoplment",
-    percentage: 80,
-  ),
-  Skill(
-    skill: "andoid devolpment",
-    percentage: 78,
-  ),
-  Skill(
-    skill: "data strutures and algo",
+    skill: "flutter development",
     percentage: 90,
   ),
   Skill(
+    skill: "Dart ,kotlin",
+    percentage: 85,
+  ),
+  Skill(
+    skill: "Python",
+    percentage: 80,
+  ),
+  Skill(
+    skill: "Android development",
+    percentage: 78,
+  ),
+  Skill(
+    skill: "Problem solving ",
+    percentage: 60,
+  ),
+  Skill(
     skill: "English",
-    percentage: 40,
+    percentage: 95,
+  ),
+  Skill(
+    skill: "AI [Computer vision , NLP, ML ,DL]",
+    percentage: 60,
   ),
 ];
 
@@ -79,7 +87,7 @@ class SkillSection extends StatelessWidget {
                       ),
                       SizedBox(height: 10.0),
                       Text(
-                        "This is all the skills listed below more will be added in due time. This is all the skills listed below more will be added in due time.",
+                        "This is all the skills listed below more will be added in due time.",
                         style: TextStyle(
                           color: kCaptionColor,
                           height: 1.5,

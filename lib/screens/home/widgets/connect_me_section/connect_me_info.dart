@@ -1,39 +1,13 @@
+import 'package:Amgad/screens/home/widgets/connect_me_section/connect_me_data.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-import '../../../models/footer_item.dart';
-import '../../../utils/constants.dart';
-import '../../../utils/screen_helper.dart';
+import '../../../../models/connect_me_item.dart';
+import '../../../../utils/constants.dart';
+import '../../../../utils/screen_helper.dart';
 
-final List<FooterItem> footerItems = [
-  FooterItem(
-    iconPath: "assets/images/mappin.png",
-    title: "ADDRESS",
-    text1: "Eygpt ",
-    text2: "Bine suif",
-  ),
-  FooterItem(
-    iconPath: "assets/images/phone.png",
-    title: "PHONE",
-    text1: "+20 106 947 3692",
-    text2: "+20 127 653 3213",
-  ),
-  FooterItem(
-    iconPath: "assets/images/email.png",
-    title: "EMAIL",
-    text1: "amgad14nadey@gamil.com",
-    text2: "mage_13.com",
-  ),
-  FooterItem(
-    iconPath: "assets/images/whatsapp.png",
-    title: "WHATSAPP",
-    text1: "+20 127 6533 213",
-    text2: "+20 127 6533 213",
-  )
-];
-
-class Footer extends StatelessWidget {
+class ConnectMeInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -124,9 +98,7 @@ Widget _buildUi(double width, BuildContext context) {
                       .toList(),
                 ),
               ),
-              SizedBox(
-                height: 20.0,
-              ),
+              SizedBox(height: 20.0),
               Flex(
                 direction: ScreenHelper.isMobile(context)
                     ? Axis.vertical
@@ -138,7 +110,7 @@ Widget _buildUi(double width, BuildContext context) {
                   Padding(
                     padding: EdgeInsets.only(bottom: 8.0),
                     child: Text(
-                      "",
+                      "Privacy Policy | Copyright (c) 2021",
                       //
                       style: TextStyle(
                         color: kCaptionColor,
@@ -148,33 +120,25 @@ Widget _buildUi(double width, BuildContext context) {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      // GestureDetector(
+                      //   onTap: () {},
+                      //   child: MouseRegion(
+                      //     cursor: SystemMouseCursors.click,
+                      //     child: Text(
+                      //       "",
+                      //       style: TextStyle(
+                      //         color: kCaptionColor,
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
+
                       GestureDetector(
                         onTap: () {},
                         child: MouseRegion(
                           cursor: SystemMouseCursors.click,
                           child: Text(
-                            "Privacy Policy",
-                            style: TextStyle(
-                              color: kCaptionColor,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Container(
-                        padding: EdgeInsets.symmetric(horizontal: 8.0),
-                        child: Text(
-                          "|",
-                          style: TextStyle(
-                            color: kCaptionColor,
-                          ),
-                        ),
-                      ),
-                      GestureDetector(
-                        onTap: () {},
-                        child: MouseRegion(
-                          cursor: SystemMouseCursors.click,
-                          child: Text(
-                            "Terms & Conditions",
+                            " Michele Harrington and Amgad Nady.All rights Reserved Terms & Conditions",
                             style: TextStyle(
                               color: kCaptionColor,
                             ),

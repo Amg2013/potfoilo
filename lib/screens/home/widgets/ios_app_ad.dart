@@ -68,7 +68,7 @@ class IosAppAd extends StatelessWidget {
                         ),
                         SizedBox(height: 10.0),
                         Text(
-                          "This is a random text about the project,  This is a random text about the projectThis is a random text about the project,This should be long enough",
+                          "UniversalSmart Home App is an all-in-one solution for seamless home automation.\n Control lights, thermostats, security, and more with a user-friendly interface across various smart devices,\n enhancing comfort and efficiency for modern living.",
                           style: TextStyle(
                             color: kCaptionColor,
                             height: 1.5,

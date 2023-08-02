@@ -1,27 +1,11 @@
+import 'package:Amgad/screens/home/widgets/testimonials/testimoinals_data.dart';
+import 'package:Amgad/utils/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-import '../../../models/testimonial.dart';
-import '../../../utils/constants.dart';
-import '../../../utils/screen_helper.dart';
-
-final List<Testimonial> testimonials = [
-  Testimonial(
-    text:
-        "This is a random text about the projectThis is a random text about the projectThis is a random text about the project",
-    personName: "JANNY STONE",
-    profilePhoto: "assets/images/female.png",
-    occupation: 'sskfa ',
-  ),
-  Testimonial(
-    text:
-        "This is a random text about the projectThis is a random text about the project This is a random text about the project This is a random text about the project",
-    personName: "KEN WILLIAMS",
-    profilePhoto: "assets/images/male.png",
-    occupation: 'kjnh ',
-  )
-];
+import '../../../../utils/constants.dart';
+import '../../../../utils/screen_helper.dart';
 
 class TestimonialWidget extends StatelessWidget {
   @override
@@ -48,7 +32,7 @@ Widget _buildUi(double width) {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "TESTIMONIALS",
+                LocalizationKey.testimonials,
                 style: GoogleFonts.oswald(
                   color: Colors.white,
                   fontWeight: FontWeight.w900,
@@ -66,19 +50,20 @@ Widget _buildUi(double width) {
                     children: [
                       TextSpan(
                         text:
-                            "This is the portfolio section. There is alot of work here",
+                            "Discover the impact we've made! Our clients share their experiences and rave about our exceptional services",
                         style: TextStyle(color: Colors.white, height: 1.8),
                       ),
                       TextSpan(
-                          text: " click here to contact us",
+                          text:
+                              "See why they love working with us.Highly skilled team, top-notch results!",
                           style: TextStyle(
-                            color: kPrimaryColor,
+                            color: Colors.white,
                             fontWeight: FontWeight.w700,
                             height: 1.8,
                           )),
                       TextSpan(
-                        text: ". This is a random text about the project :-)",
-                        style: TextStyle(color: Colors.white, height: 1.8),
+                        text: " Couldn't be happier! Grateful Client",
+                        style: TextStyle(color: kPrimaryColor, height: 1.8),
                       ),
                     ],
                   ),

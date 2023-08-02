@@ -15,15 +15,15 @@ List<HeaderItem> headerItems = [
     onTap: () {},
   ),
   HeaderItem(
-      title: localizationKey.headerPREVIOUS.tr().toString(), onTap: () {}),
+      title: LocalizationKey.headerPREVIOUS.tr().toString(), onTap: () {}),
   HeaderItem(
-      title: localizationKey.headerService.tr().toString(), onTap: () {}),
-  HeaderItem(title: localizationKey.headerGitHub.tr().toString(), onTap: () {}),
+      title: LocalizationKey.headerService.tr().toString(), onTap: () {}),
+  HeaderItem(title: LocalizationKey.headerGitHub.tr().toString(), onTap: () {}),
   HeaderItem(
-      title: localizationKey.headerRecommendations.tr().toString(),
+      title: LocalizationKey.headerRecommendations.tr().toString(),
       onTap: () {}),
-  HeaderItem(title: localizationKey.headerSocial.tr().toString(), onTap: () {}),
-  HeaderItem(title: localizationKey.headerHire.tr().toString(), onTap: () {}),
+  HeaderItem(title: LocalizationKey.headerSocial.tr().toString(), onTap: () {}),
+  HeaderItem(title: LocalizationKey.headerHire.tr().toString(), onTap: () {}),
   // HeaderItem(title: 'En', onTap: () {})
 ];
 
@@ -42,7 +42,7 @@ class HeaderLogo extends StatelessWidget {
             text: TextSpan(
               children: [
                 TextSpan(
-                  text: localizationKey.bigIconLetter,
+                  text: LocalizationKey.bigIconLetter,
                   style: GoogleFonts.oswald(
                     color: Colors.white,
                     fontSize: 32.0,

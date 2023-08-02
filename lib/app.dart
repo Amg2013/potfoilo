@@ -17,12 +17,12 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: localizationKey.title,
+      title: LocalizationKey.title,
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       darkTheme: Theme.of(context).copyWith(
         platform: TargetPlatform.android,
-        scaffoldBackgroundColor: Color.fromARGB(0, 58, 70, 201),
+        scaffoldBackgroundColor: Color(0x003A46C9),
         primaryColor: kPrimaryColor,
         canvasColor: kBackgroundColor,
         textTheme: GoogleFonts.latoTextTheme(),
